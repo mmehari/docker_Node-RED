@@ -1,0 +1,42 @@
+FROM ubuntu:16.04
+
+# Update the repository
+RUN apt-get update
+
+# Install dependancy packages
+RUN apt-get -y install make gcc g++ net-tools nano curl sudo git psmisc ant software-properties-common
+
+# Install oracle java 8
+RUN add-apt-repository -y ppa:webupd8team/java && apt-get update
+RUN echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true" | debconf-set-selections
+RUN echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 seen   true" | debconf-set-selections
+RUN apt-get -y install oracle-java8-installer
+
+# export java home directory
+RUN echo 'export JAVA_HOME="/usr/lib/jvm/java-8-oracle"' >> /root/.bashrc
+
+# Install node.js
+RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+RUN apt-get -y install nodejs build-essential
+
+# Instal node-RED
+RUN npm install -g --unsafe-perm node-red
+
+# Install node-red (ewine) modules and experiment flow file
+RUN mkdir -p /root/.node-red/
+COPY node-red /root/.node-red/
+
+# Copy pseudo terminal multiplexer program
+RUN mkdir -p /root/pts_mux
+COPY pts_mux /root/pts_mux
+
+# Copy cooja simulator for the contiki operating system
+RUN mkdir -p /root/contiki
+COPY contiki /root/contiki
+
+# Clone LA tools
+RUN cd /root && git clone https://github.com/sseidel1/v4_analysis
+
+# Install pseudo terminal multiplexer and LA tools
+RUN cd /root/pts_mux && make clean && make && mv pts_mux /usr/local/bin
+RUN cd /root/v4_analysis && make clean && make && mv Search /usr/local/bin

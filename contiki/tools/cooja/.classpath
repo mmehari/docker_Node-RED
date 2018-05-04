@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="apps/avrora/src"/>
+	<classpathentry kind="src" path="apps/collect-view/java"/>
+	<classpathentry kind="src" path="apps/mrm/java"/>
+	<classpathentry kind="src" path="apps/mspsim/src"/>
+	<classpathentry kind="src" path="apps/native_gateway/java"/>
+	<classpathentry kind="src" path="apps/powertracker/java"/>
+	<classpathentry kind="src" path="apps/serial_socket/java"/>
+	<classpathentry kind="src" path="apps/serial2pty/java"/>
+	<classpathentry kind="src" path="apps/simTimer/java"/>
+	<classpathentry kind="src" path="examples/appmote_rimeabc"/>
+	<classpathentry kind="src" path="examples/project_new_interface/java"/>
+	<classpathentry kind="src" path="examples/project_new_plugin/java"/>
+	<classpathentry kind="src" path="examples/project_new_radiomedium/java"/>
+	<classpathentry kind="src" path="java"/>
+	<classpathentry kind="src" path="dist"/>
+	<classpathentry kind="lib" path="apps/avrora/lib/avrora-small.jar"/>
+	<classpathentry kind="lib" path="apps/avrora/lib/cooja_avrora.jar"/>
+	<classpathentry kind="lib" path="apps/collect-view/cooja-collect-view.jar"/>
+	<classpathentry kind="lib" path="apps/mrm/lib/mrm.jar"/>
+	<classpathentry kind="lib" path="apps/mspsim/lib/coffee.jar"/>
+	<classpathentry kind="lib" path="apps/mspsim/lib/cooja_mspsim.jar"/>
+	<classpathentry kind="lib" path="apps/mspsim/lib/jipv6.jar"/>
+	<classpathentry kind="lib" path="apps/mspsim/lib/mspsim.jar" sourcepath="/home/mmehari/contiki/tools/mspsim"/>
+	<classpathentry kind="lib" path="apps/powertracker/lib/powertracker.jar"/>
+	<classpathentry kind="lib" path="apps/serial_socket/lib/serial_socket.jar"/>
+	<classpathentry kind="lib" path="apps/serial2pty/lib/serial2pty.jar"/>
+	<classpathentry kind="lib" path="apps/simTimer/cooja-simTimer.jar"/>
+	<classpathentry kind="lib" path="dist/cooja.jar"/>
+	<classpathentry kind="lib" path="dist/lib/coffee.jar"/>
+	<classpathentry kind="lib" path="dist/lib/jdom.jar"/>
+	<classpathentry kind="lib" path="dist/lib/jipv6.jar"/>
+	<classpathentry kind="lib" path="dist/lib/jsyntaxpane.jar"/>
+	<classpathentry kind="lib" path="dist/lib/log4j.jar"/>
+	<classpathentry kind="lib" path="dist/lib/mspsim.jar"/>
+	<classpathentry kind="lib" path="dist/lib/swingx-all-1.6.4.jar"/>
+	<classpathentry kind="lib" path="lib/coffee.jar"/>
+	<classpathentry kind="lib" path="lib/jdom.jar"/>
+	<classpathentry kind="lib" path="lib/jipv6.jar"/>
+	<classpathentry kind="lib" path="lib/jsyntaxpane.jar"/>
+	<classpathentry kind="lib" path="lib/log4j.jar"/>
+	<classpathentry kind="lib" path="lib/mspsim.jar" sourcepath="/home/mmehari/contiki/tools/mspsim"/>
+	<classpathentry kind="lib" path="lib/swingx-all-1.6.4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="build"/>
+</classpath>
