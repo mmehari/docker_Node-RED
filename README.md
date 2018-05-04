@@ -20,7 +20,7 @@ Afterwards, start a demonstrator flow and give it some time, specially when exec
 node-red /root/.node-red/flows_sensys2017.json
 ```
 
-Later on, navigate to [localhost:1880](http://localhost:1880) to have a look at the node-red flow. For the example above, it will open the wireless sensor network demonstrator that was used in [sensys 2017 demo/poster session](https://doi.org/10.1145/3131672.3136971].
+Later on, navigate to [localhost:1880](http://localhost:1880) to have a look at the node-red flow. For the example above, it will open the wireless sensor network demonstrator that was used in [sensys 2017 demo/poster session](https://doi.org/10.1145/3131672.3136971).
 
 
 ## Contact
